@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e6e6e6;
+    text-align: center;
+    padding-top: 80px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 300px;
+    margin: auto;
+}
+
+/* Labels + inputs alignment */
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 160px;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    background: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Forgot password */
+#forgot {
+    color: #1a73e8;
+    font-weight: normal;
+    margin: 10px 0 20px 0;
+}
+
+/* Login button */
+#logIn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #4caf9a, #1f5f55);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+/* Sign up text */
+#signUp {
+    font-weight: normal;
+}
+
+#signUp {
+    color: black;
+}
+
+#signUp::after {
+    content: " Sign Up";
+    color: #1a73e8;
+}
+
+/* User section */
+h4 {
+    margin-top: 15px;
+}
+
+#userLog {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #ccc;
+    cursor: pointer;
+}

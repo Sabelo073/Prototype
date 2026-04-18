@@ -1,0 +1,43 @@
+/* Title */
+h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Container stays the same */
+.container {
+    width: 300px;
+    margin: auto;
+}
+
+/* Labels + inputs (same style) */
+label {
+    display: inline-block;
+    width: 130px; /* slightly wider for longer labels */
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 140px;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    background: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Reset button (same style as login) */
+#reset {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #4caf9a, #1f5f55);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}

@@ -1,0 +1,53 @@
+/* Title */
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    width: 130px; /* fits longer labels */
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 140px;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    background: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Register button (same style as login) */
+#register {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #4caf9a, #1f5f55);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Login link text */
+#logIn {
+    color: #1a73e8;
+    font-weight: normal;
+    margin-top: 15px;
+}
