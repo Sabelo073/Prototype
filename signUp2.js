@@ -2,8 +2,10 @@ let register=document.getElementById("register");
 let logIn=document.getElementById("logIn");
 
 
+
+
 register.onclick=function (){
-        let userName=document.getElementById("userName").value;
+    let userName=document.getElementById("userName").value;
 let email=document.getElementById("email").value;
 let newPassword=document.getElementById("newPassword").value;
 
@@ -15,7 +17,5 @@ let newPassword=document.getElementById("newPassword").value;
 }
 
 logIn.onclick=function (){
-
-    window.location.href="admin.html";
-
+    window.location.href="user.html";
 }

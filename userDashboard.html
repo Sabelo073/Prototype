@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="userDashboard.css">
+  
+</head>
+
+<body>
+  <div class="app-layout">
+    <!-- SIDEBAR (Profile, Performance, Submit Reports, Settings, Logout) -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2> Gas Monitoring</h2>
+      </div>
+      <div class="sidebar-nav">
+        <div class="nav-item" data-section="profile">
+          <i></i> <span>Profile</span>
+        </div>
+        <div class="nav-item active" data-section="performance">
+          <i></i> <span>Performance</span>
+        </div>
+        <div class="nav-item" data-section="reports">
+          <i></i> <span>Submit Reports</span>
+        </div>
+        <div class="nav-item" data-section="settings">
+          <i></i> <span id="settings">Settings</span>
+        </div>
+      </div>
+      <div style="padding: 0 1rem 2rem 1rem; margin-top: auto;">
+        <div class="logout-item" id="logoutBtn">
+          <i></i> <span>Logout</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN AREA with TOP BAR and dynamic views -->
+    <div class="main-area">
+      
+      <div class="top-bar">
+        <h3> Dashboard Overview</h3>
+        <div class="top-bar-actions">
+          <div class="user-badge">
+            <span></span> <span>User</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROFILE VIEW--->
+      <div id="profile-view" class="view">
+        <div class="apt-card" style="background: white; text-align: center;">
+          <div class="apt-title"> User Profile</div>
+          <div class="info-row"><span class="info-label">Name:</span><span class="info-value">Alex Morgan</span></div>
+          <div class="info-row"><span class="info-label">Role:</span><span class="info-value">User</span></div>
+          <div class="info-row"><span class="info-label">Email:</span><span class="info-value">user@example.com</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE VIEW --->
+      <div id="performance-view" class="view active-view">
+        <div class="cards-row">
+          <div class="apt-card">
+            <div class="apt-title">
+              <span></span> APT 101
+            </div>
+            <div class="info-row">
+              <span class="info-label"> Gas Pressure :</span>
+              <span class="info-value">57%</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Room Temp :</span>
+              <span class="info-value">17°C</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"> Status :</span>
+              <span class="info-value status-text status-normal">Normal</span>
+            </div>
+          </div>
+
+          <!-- Card 2: APT 102 -->
+          <div class="apt-card">
+            <div class="apt-title">
+              <span></span> APT 102
+            </div>
+            <div class="info-row">
+              <span class="info-label"> Gas Pressure :</span>
+              <span class="info-value">80%</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"> Room Temp :</span>
+              <span class="info-value">30°C</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"> Status :</span>
+              <span class="info-value status-text status-emergency">Emergency</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BAR CHART --->
+        <div class="chart-container">
+          <div class="chart-title">
+            Performance Metrics
+          </div>
+          <div class="bars-wrapper">
+            <!-- Bar 1: 80% (Blue) -->
+            <div class="bar-single">
+              <div class="bar-value-above">80%</div>
+              <div class="bar">
+                <div class="bar-fill" style="height: 0%; background-color: #3C4CF9;"></div>
+              </div>
+              <div class="bar-label"></div>
+            </div>
+            <!-- Bar 2: 57% (Dark Blue) -->
+            <div class="bar-single">
+              <div class="bar-value-above">57%</div>
+              <div class="bar">
+                <div class="bar-fill" style="height: 0%; background-color: #3C4CF9;"></div>
+              </div>
+              <div class="bar-label"></div>
+            </div>
+            <!-- Bar 3: 30°C -->
+            <div class="bar-single">
+              <div class="bar-value-above">30°C</div>
+              <div class="bar">
+                <div class="bar-fill" style="height: 0%; background-color: #B5E5E1;"></div>
+              </div>
+              <div class="bar-label"></div>
+            </div>
+            <!-- Bar 4: 17°C -->
+            <div class="bar-single">
+              <div class="bar-value-above">17°C</div>
+              <div class="bar">
+                <div class="bar-fill" style="height: 0%; background-color: #B5E5E1;"></div>
+              </div>
+              <div class="bar-label"></div>
+            </div>
+          </div>
+
+          <!-- Group labels: Gas % under first two bars, Temperature C under last two -->
+          <div class="group-labels">
+            <div class="group-label" style="margin-right: auto; margin-left: auto; max-width: 180px;"> Gas %</div>
+            <div class="group-label" style="margin-right: auto; margin-left: auto; max-width: 180px;"> Temperature C
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUBMIT REPORTS VIEW  -->
+      <div id="reports-view" class="view">
+        <div class="apt-card" style="background: white; text-align: center;">
+          <div class="apt-title">Submit Reports</div>
+          <p>Report submission interface will appear here.</p>
+        </div>
+      </div>
+
+      <!-- SETTINGS VIEW  -->
+      <div id="settings-view" class="view">
+        <div class="apt-card" style="background: white; text-align: center;">
+          <div class="apt-title"> Settings</div>
+          <p>System settings and preferences.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="userDashboard.js"></script>
+
+  
+</body>
+
+</html>

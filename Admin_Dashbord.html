@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Admin_DashBoard.css">
+</head>
+
+<body>
+
+    <!--This is a sidebar -->
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+
+            <!-- Dashboard -->
+            <li>
+                <a href="#" onclick="loadPage('admin_home.html')">
+                    <ion-icon name="filter-outline"></ion-icon>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <!-- Profile -->
+            <li class="active">
+                <a href="#" onclick="loadPage('profilesettings.html')">
+                    <ion-icon name="person-circle"></ion-icon>
+                    <span>Profile</span>
+                </a>
+            </li>
+
+            <!-- Performance -->
+            <li>
+                <a href="#" onclick="loadPage('sabza.html')">
+                    <ion-icon name="bar-chart"></ion-icon>
+                    <span>Performance </span>
+                </a>
+            </li>
+
+            <!-- Testimonials -->
+            <li>
+                <a href="#" onclick="loadPage('Viwe_testimonials.html')">
+                    <ion-icon name="star-half"></ion-icon>
+                    <span>Testimonials</span>
+                </a>
+            </li>
+
+            <!-- Weather -->
+            <li>
+                <a href="#" onclick="loadPage('weather_API.html')">
+                    <ion-icon name="thunderstorm"></ion-icon>
+                    <span>Weather</span>
+                </a>
+            </li>
+            <!-- Report Issues -->
+              <li>
+                <a href="#" onclick="loadPage('Admin_reports.html')">
+                    <ion-icon name="eye"></ion-icon>
+                    <span>View Reports</span>
+                </a>
+            </li>
+
+            <!-- Settings -->
+            <li>
+                <a href="#" onclick="loadPage('settings.html')">
+                    <ion-icon name="settings"></ion-icon>
+                    <span>Settings</span>
+                </a>
+            </li>
+    
+
+            <!-- Logout (kept as redirect) -->
+            <li>
+                <a href="Admin_Login.html">
+                    <ion-icon name="log-out"></ion-icon>
+                    <span>Log-out</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+            </div>
+
+            <div class="user--info">
+                <div class="search--box">
+                    <ion-icon name="search-circle"></ion-icon>
+                    <input type="text" placeholder="Search ">
+                </div>
+                <img src="Keli.jpeg" alt="">
+            </div>
+        </div>
+
+        <!-- FULL SCREEN CHILD FORM -->
+        <div class="card--container full-frame-container">
+            <!-- The contentFrame will load different pages based on the sidebar navigation it act as a parent form -->
+            <iframe id="contentFrame" class="content-frame" src="admin_home.html"></iframe>
+        </div>
+    </div>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="Admin_Dashboard.js"></script>
+
+</body>
+
+</html>

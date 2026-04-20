@@ -14,7 +14,7 @@ h1 {
     margin: auto;
 }
 
-/* Labels + inputs alignment */
+/* Labels + inputs */
 label {
     display: inline-block;
     width: 90px;
@@ -54,39 +54,26 @@ input[type="password"] {
 }
 
 /* Sign up text */
-#signUp {
+#sign {
     font-weight: normal;
-}
-
-#signUp {
     color: black;
 }
 
-#signUp::after {
+#sign::after {
     content: " Sign Up";
     color: #1a73e8;
 }
 
-/* User section */
+/* Bottom section */
 h4 {
     margin-top: 15px;
 }
 
-#userLog {
+/* Admin switch button */
+#adminLog {
     padding: 8px 15px;
     border: none;
     border-radius: 10px;
     background: #ccc;
     cursor: pointer;
-}
-
-@media (max-width: 400px) {
-    .box {
-        width: 90%;
-        padding: 30px 20px;
-    }
-    .box .text ion-icon {
-        right: 20px;
-        top: 160px;
-    }
 }
